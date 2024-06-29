@@ -1,35 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer .section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        .footer h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .footer .contact {
+            margin-top: 20px;
+        }
+        .footer .media-icons {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .footer .media-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        @media (max-width: 600px) {
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer .section {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="container">
+            <div class="section">
+                <h2>Home</h2>
+                <a href="#">Home</a>
+            </div>
+            <div class="section">
+                <h2>About</h2>
+                <a href="#">About Us</a>
+            </div>
+            <div class="section">
+                <h2>Links</h2>
+                <a href="#">Homepage</a>
+                <a href="#">About Page</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="section">
+                <h2>Services</h2>
+                <a href="#">Web Development</a>
+                <a href="#">App Development</a>
+                <a href="#">SEO</a>
+            </div>
+            <div class="section">
+                <h2>Contact</h2>
+                <p>Contact Number: 8879887262</p>
+                <a href="#">Social Media Page</a>
+                <div class="media-icons">
+                    <a href="#" class="media-icons">FB</a>
+                    <a href="#" class="media-icons">TW</a>
+                    <a href="#" class="media-icons">IG</a>
+                    <a href="#" class="media-icons">LN</a>
+                    <a href="#" class="media-icons">YT</a>
+                </div>
+            </div>
         </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
-      </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
     </footer>
-  </body>
+</body>
 </html>
